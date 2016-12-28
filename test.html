@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!--=====GENERICO=====-->
+	<form name="frmContacto" method="post" action="email_controller.php">
+		<table width="500px">
+			<tr>
+				<td>
+					<label for="first_name">Nombre: *</label>
+				</td>
+				<td>
+					<input type="text" name="first_name" maxlength="50" size="25">
+				</td>
+			</tr>
+			<tr>	
+				<td valign="top">
+					<label for="last_name">Apellido: *</label>
+				</td>
+				<td>
+					<input type="text" name="last_name" maxlength="50" size="25">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="email">Dirección de E-mail: *</label>
+				</td>
+				<td>
+					<input type="text" name="email" maxlength="80" size="35">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="telephone">Número de teléfono:</label>
+				</td>
+				<td>
+					<input type="text" name="telephone" maxlength="25" size="15">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="comments">Comentarios: *</label>
+				</td>
+				<td>
+					<textarea name="comments" maxlength="500" cols="30" rows="5"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" style="text-align:right">
+					<input type="submit" value="Enviar">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<!--=====FIN GENERICO=====-->
+
+	<!--=====BOOTSTRAP=====-->
+	<form role="form" name="frmContacto" method="post" action="email_controller.php">
+	  <div class="form-group">
+	    <label style="font-weight: lighter;" for="email">Email</label>
+	    
+	    <input type="text" class="form-control" name="email" maxlength="80" size="35" placeholder="Correo">
+	  </div>
+	  <div class="form-group">
+	    <label style="font-weight: lighter;" for="nombre">Nombre</label>
+	    
+	    <input type="text" class="form-control" name="first_name" maxlength="50" placeholder="Nombre y Apellidos" size="25">
+	  </div>
+	  <div class="form-group">
+	    <label style="font-weight: lighter;" for="mensaje">¿Cuál es tu consulta?</label>
+	    <textarea class="form-control" name="comments" maxlength="500" cols="30" rows="5" placeholder="Escríbenos"></textarea>
+	    
+	  </div>
+
+	  
+	  <input type="submit" class="btn btn-default center-block" value="Enviar">
+	</form>
+	<!--=====FIN BOOTSTRAP=====-->
+</body>
+</html>
